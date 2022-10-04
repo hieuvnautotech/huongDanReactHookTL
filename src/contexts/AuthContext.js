@@ -8,7 +8,7 @@ const AuthContextProvider = ({ children }) => {
   const [isAuthenticated, setAuthentication] = useState(false)
 
   // const [isAuthenticated, dispatch] = useReducer(authReducer, false)
-  const toogleAuth = () => { 
+  const toggleAuth = () => { 
     setAuthentication(!isAuthenticated)
   }
   // useEffect
@@ -23,7 +23,7 @@ const AuthContextProvider = ({ children }) => {
   // context data
   const authContextData = {
     isAuthenticated,
-    toogleAuth
+    toggleAuth
   }
 
   // return
